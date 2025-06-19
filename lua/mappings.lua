@@ -29,3 +29,6 @@ map({ "n" }, "<leader>z", "<cmd> Lazy <cr>")
 
 -- show key bindings
 map({ "n" }, "<leader>k", "<cmd> Telescope keymaps <cr>")
+
+-- show file browser, useful when exploring dependencies source code
+map({ "n" }, "<leader>o", ":Telescope file_browser path=%:p:h select_buffer=true<CR>")

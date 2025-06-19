@@ -25,7 +25,13 @@ return {
         },
       },
     },
-  }
+  },
+
+  -- file browswer so I can open the directory of dependencies when I use go-to-definition
+  {
+    "nvim-telescope/telescope-file-browser.nvim",
+    dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
+  },
 
   -- {
   -- 	"nvim-treesitter/nvim-treesitter",
